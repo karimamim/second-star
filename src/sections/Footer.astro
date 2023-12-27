@@ -1,0 +1,102 @@
+---
+import "@fontsource/jost";
+import SocialIconList from "../components/SocialIconList.astro";
+import { ChevronRight } from "lucide-react";
+const navbarNav = [
+	{ text: "Home", path: "/" },
+	{ text: "About Us", path: "/about" },
+	{ text: "Services", path: "/services" },
+	{ text: "Portfolio", path: "/portfolio" },
+	{ text: "Contact", path: "/contact" },
+];
+
+const services = [
+	"Web Design",
+	"Web Develpoment",
+	"Product Management",
+	"Marketing",
+	"Graphic Design",
+];
+---
+
+<footer>
+	<div class="max-w-[1140px] m-auto md:flex md:justify-between px-4 py-20">
+		<div class="mb-6">
+			<h2 class="uppercase text-navy font-extrabold text-3xl mb-4 font-jost">
+				arsha
+			</h2>
+			<p class="text-darkish text-sm mb-2 font-jost">
+				A108 Adam Street <br />New York, NY 535022 <br />
+				 United States
+			</p>
+			<p class="text-darkish text-sm mb-2 font-jost">
+				<span class="text-dark text-md font-semibold">Phone:</span> +1 5589
+				55488 55
+			</p>
+			<p class="text-darkish text-sm mb-2 font-jost">
+				<span class="text-dark text-md font-semibold">Email:</span>
+				 info@example.com
+			</p>
+		</div>
+		<div class="mb-6">
+			<h3 class="text-navy font-extrabold text-md mb-4 font-jost tracking-wide">
+				Useful Links
+			</h3>
+			<ul>
+				{
+					navbarNav.map((nav) => (
+						<li class="flex mb-3 items-center gap-2">
+							<>
+								<ChevronRight color="#209dd8" size={15} />
+								<a
+									class="text-darkish font-light text-sm hover:text-skyBlue transition duration-200"
+									href={nav.path}
+								>
+									{nav.text}
+								</a>
+							</>
+						</li>
+					))
+				}
+			</ul>
+		</div>
+
+		<div class="mb-6">
+			<h3 class="text-navy font-extrabold text-md mb-4 font-jost tracking-wide">
+				Our Services
+			</h3>
+			<ul>
+				{
+					services.map((service) => (
+						<li class="flex mb-3 items-center gap-2">
+							<>
+								<ChevronRight color="#209dd8" size={15} />
+								<a
+									class="text-darkish font-light text-sm hover:text-skyBlue transition duration-200 "
+									href="#"
+								>
+									{service}
+								</a>
+							</>
+						</li>
+					))
+				}
+			</ul>
+		</div>
+		<div class="mb-6">
+			<h3 class="text-navy font-extrabold text-md mb-4 font-jost tracking-wide">
+				Our Soical Networks
+			</h3>
+			<p class="text-dark mb-5 md:hidden">
+				Cras fermentum odio eu feugiat lide par naso tierra videa magna derita
+				valies
+			</p>
+			<p class="text-dark mb-5 hidden md:block">
+				Cras fermentum odio eu feugiat lide <br /> par naso tierra videa magna
+				derita <br />
+				 valies
+			</p>
+			<SocialIconList />
+		</div>
+	</div>
+</footer>

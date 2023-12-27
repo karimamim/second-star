@@ -1,0 +1,49 @@
+---
+import TeamCard from "../components/TeamCard";
+import team_1 from "../assets/team-img/team-1.jpg";
+import team_2 from "../assets/team-img/team-2.jpg";
+import team_3 from "../assets/team-img/team-3.jpg";
+import team_4 from "../assets/team-img/team-4.jpg";
+---
+
+<section class="bg-offWhite py-20">
+	<div class="max-w-[1140px] m-auto px-4">
+		<h2
+			class="text-navy font-extrabold text-center text-3xl font-jost uppercase mb-10"
+		>
+			team
+		</h2>
+		<p class="text-dark text-center mb-10" data-aos="fade-up">
+			Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+			aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+			quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+			sit in iste officiis commodi quidem hic quas.
+		</p>
+		<div class="md:flex gap-5 flex-wrap">
+			<TeamCard
+				src={team_1.src}
+				name="Walter White"
+				role="Chief Executive Officer"
+				text="Explicabo voluptatem mollitia et repellat qui dolorum quasi"
+			/>
+			<TeamCard
+				src={team_2.src}
+				name="Sarah Jhonson"
+				role="Product Manager"
+				text="Aut maiores voluptates amet et quis praesentium qui senda para"
+			/>
+			<TeamCard
+				src={team_3.src}
+				name="William Anderson"
+				role="CTO"
+				text="Quisquam facilis cum velit laborum corrupti fuga rerum quia"
+			/>
+			<TeamCard
+				src={team_4.src}
+				name="Amanda Jepson"
+				role="Accountant"
+				text="Dolorum tempora officiis odit laborum officiis et et accusamus"
+			/>
+		</div>
+	</div>
+</section>

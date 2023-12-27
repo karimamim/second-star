@@ -1,0 +1,106 @@
+---
+import hero_img from "../assets/images/hero-img.png";
+import client_logo_1 from "../assets/images/client-1.png";
+import client_logo_2 from "../assets/images/client-2.png";
+import client_logo_3 from "../assets/images/client-3.png";
+import client_logo_4 from "../assets/images/client-4.png";
+import client_logo_5 from "../assets/images/client-5.png";
+import client_logo_6 from "../assets/images/client-6.png";
+
+const clients = [
+	client_logo_1,
+	client_logo_2,
+	client_logo_3,
+	client_logo_4,
+	client_logo_5,
+	client_logo_6,
+];
+---
+
+<section class="py-20 bg-navy">
+	<div
+		class="mx-auto max-w-[1140px] px-4 grid md:grid-cols-2 gap-8 items-center"
+	>
+		<div class="md:order-last" data-aos="zoom-in">
+			<img class="hero_image" src={hero_img.src} alt="Digital Studio" />
+		</div>
+		<div class="transition" data-aos="fade-up">
+			<h1
+				class="text-white font-black text-3xl md:text-5xl font-jost md:leading-[56px] tracking-[2px] mb-4"
+			>
+				Better Solutions For Your Business
+			</h1>
+			<p class="text-gray font-bold text-xl font-jost tracking-wider mb-12">
+				We are team of talented designers making websites with Bootstrap
+			</p>
+			<div class="flex gap-6 items-center">
+				<button
+					class="px-7 py-3 bg-skyBlue hover:bg-blue rounded-3xl font-jost font-bold text-white tracking-wider"
+				>
+					Get Started</button
+				>
+				<button
+					class="watch_video_btn flex items-center gap-1 text-white font-jost font-bold tracking-wider"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="32"
+						height="32"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="lucide lucide-play-circle transition duration-300"
+						><circle cx="12" cy="12" r="10"></circle><polygon
+							points="10 8 16 12 10 16 10 8"></polygon></svg
+					>
+					<div class="pt-1">Watch Video</div>
+				</button>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="py-3 bg-offWhite">
+	<ul
+		class="flex flex-wrap md:flex-nowrap gap-5 max-w-[1140px] px-4 m-auto items-center justify-around"
+		data-aos="zoom-in"
+	>
+		{
+			clients.map((client) => (
+				<li class="filter grayscale hover:filter-none ">
+					<img
+						class=" w-20 py-4 transition duration-300 hover:scale-[1.1]"
+						src={client.src}
+						alt="client logo"
+					/>
+				</li>
+			))
+		}
+	</ul>
+</section>
+
+<style>
+	.watch_video_btn:hover svg {
+		stroke: #209dd8;
+	}
+
+	.hero_image {
+		animation: infinite 4s upAndDown ease-in-out;
+	}
+
+	@keyframes upAndDown {
+		0% {
+			translate: 0 -20px;
+		}
+		50% {
+			translate: 0 20px;
+		}
+
+		100% {
+			translate: 0 -20px;
+		}
+	}
+</style>

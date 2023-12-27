@@ -1,0 +1,50 @@
+---
+import { CheckCheck } from "lucide-react";
+
+const abouts = [
+	"Ullamco laboris nisi ut aliquip ex ea commodo consequat",
+	"Duis aute irure dolor in reprehenderit in voluptate velit",
+	"Ullamco laboris nisi ut aliquip ex ea commodo consequat",
+];
+---
+
+<section id="about" class="py-20">
+	<div class="max-w-[1140px] m-auto px-4 transition" data-aos="fade-up">
+		<h2
+			class="text-navy font-extrabold text-center text-3xl font-jost uppercase mb-10"
+		>
+			about us
+		</h2>
+		<div class="md:flex gap-10">
+			<div class="md:w-1/2">
+				<p class="text-dark mb-3">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+				<ul>
+					{
+						abouts.map((about) => (
+							<li class="flex gap-3 mb-2 text-dark">
+								<CheckCheck color="#47B2E4" size={20} />
+								{about}
+							</li>
+						))
+					}
+				</ul>
+			</div>
+			<div class="mt-10 md:mt-0 md:w-1/2">
+				<p class="text-dark mb-6">
+					Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+					irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+					fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+					sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<button
+					class="px-7 py-2 outline outline-2 outline-blue hover:bg-blue hover:text-white rounded font-bold text-blue tracking-wider transition duration-200"
+				>
+					Learn More</button
+				>
+			</div>
+		</div>
+	</div>
+</section>

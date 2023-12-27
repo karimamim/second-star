@@ -1,0 +1,29 @@
+---
+import "aos/dist/aos.css"; // AOS styles
+import Header from "../sections/Header.astro";
+import Footer from "../sections/Footer.astro";
+
+import "@fontsource/poppins";
+import "@fontsource/jost";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Arsha on Astro</title>
+	</head>
+	<body>
+		<Header />
+		<slot />
+		<Footer />
+
+		<script>
+			import { aosInit } from "../js/aos";
+
+			// runs on initial page load
+			aosInit();
+		</script>
+	</body>
+</html>

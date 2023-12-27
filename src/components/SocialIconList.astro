@@ -1,0 +1,28 @@
+---
+import SkypeLogo from "./SkypeLogo.astro";
+import FacebookLogo from "./FacebookLogo.astro";
+import LinkedinLogo from "./LinkedinLogo.astro";
+import { Instagram, Twitter } from "lucide-react";
+---
+
+<ul class="flex gap-3">
+	<li
+		class="bg-blue px-2 pt-2 rounded-3xl hover:bg-skyBlue transition duration-200"
+	>
+		<a href="#"><Twitter color="#ffffff" size={18} /></a>
+	</li>
+	<li class="bg-blue p-2 rounded-3xl hover:bg-skyBlue transition duration-200">
+		<a href="#"><FacebookLogo /></a>
+	</li>
+	<li
+		class="bg-blue px-2 pt-2 rounded-3xl hover:bg-skyBlue transition duration-200"
+	>
+		<a href="#"><Instagram color="#ffffff" size={18} /></a>
+	</li>
+	<li class="bg-blue p-2 rounded-3xl hover:bg-skyBlue transition duration-200">
+		<a href="#"><SkypeLogo /></a>
+	</li>
+	<li class="bg-blue p-2 rounded-3xl hover:bg-skyBlue transition duration-200">
+		<a href="#"><LinkedinLogo /></a>
+	</li>
+</ul>

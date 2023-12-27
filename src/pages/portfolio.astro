@@ -1,0 +1,110 @@
+---
+import { Tabs } from "astro-tabs";
+import "../style/tab.sass";
+
+import portfolio_img_1 from "../assets/porfolio-img/portfolio-1.jpg";
+import portfolio_img_2 from "../assets/porfolio-img/portfolio-2.jpg";
+import portfolio_img_3 from "../assets/porfolio-img/portfolio-3.jpg";
+import portfolio_img_4 from "../assets/porfolio-img/portfolio-4.jpg";
+import portfolio_img_5 from "../assets/porfolio-img/portfolio-5.jpg";
+import portfolio_img_6 from "../assets/porfolio-img/portfolio-6.jpg";
+import portfolio_img_7 from "../assets/porfolio-img/portfolio-7.jpg";
+import portfolio_img_8 from "../assets/porfolio-img/portfolio-8.jpg";
+import portfolio_img_9 from "../assets/porfolio-img/portfolio-9.jpg";
+const allPortfolioImages = [
+	portfolio_img_1,
+	portfolio_img_2,
+	portfolio_img_3,
+	portfolio_img_6,
+	portfolio_img_5,
+	portfolio_img_4,
+	portfolio_img_9,
+	portfolio_img_8,
+	portfolio_img_7,
+];
+
+const appPortfolioImages = [portfolio_img_1, portfolio_img_3, portfolio_img_6];
+const cardPortfolioImages = [portfolio_img_4, portfolio_img_9, portfolio_img_8];
+const webPortfolioImages = [portfolio_img_2, portfolio_img_5, portfolio_img_9];
+---
+
+<section id="portfolio" class="py-20">
+	<div class="max-w-[1140px] m-auto px-4">
+		<h2
+			class="text-navy font-extrabold text-center text-3xl font-jost uppercase mb-10"
+		>
+			portfolio
+		</h2>
+		<p class="text-dark text-center mb-10" data-aos="fade-up">
+			Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+			aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+			quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+			sit in iste officiis commodi quidem hic quas.
+		</p>
+		<Tabs>
+			<Fragment slot="tab-1">All</Fragment>
+			<Fragment slot="tab-2">App</Fragment>
+			<Fragment slot="tab-3">Card</Fragment>
+			<Fragment slot="tab-4">Web</Fragment>
+
+			<Fragment slot="panel-1">
+				<div class="flex flex-wrap gap-5 items-center relative">
+					{
+						allPortfolioImages.map((allPortfolioImage) => (
+							<img
+								data-aos="zoom-in"
+								class="w-[31.5%]"
+								src={allPortfolioImage.src}
+								alt="portfolio image"
+							/>
+						))
+					}
+				</div>
+			</Fragment>
+
+			<Fragment slot="panel-2">
+				<div class="flex flex-wrap gap-5 items-start relative">
+					{
+						appPortfolioImages.map((appPortfolioImage) => (
+							<img
+								data-aos="zoom-in"
+								class="w-[31.5%]"
+								src={appPortfolioImage.src}
+								alt="portfolio image"
+							/>
+						))
+					}
+				</div>
+			</Fragment>
+
+			<Fragment slot="panel-3">
+				<div class="flex flex-wrap gap-5 items-start relative">
+					{
+						cardPortfolioImages.map((cardPortfolioImage) => (
+							<img
+								data-aos="zoom-in"
+								class="w-[31.5%]"
+								src={cardPortfolioImage.src}
+								alt="portfolio image"
+							/>
+						))
+					}
+				</div>
+			</Fragment>
+			<Fragment slot="panel-4">
+				<div class="flex flex-wrap gap-5 items-start relative">
+					{
+						webPortfolioImages.map((webPortfolioImage) => (
+							<img
+								data-aos="zoom-in"
+								class="w-[31.5%]"
+								src={webPortfolioImage.src}
+								alt="portfolio image"
+							/>
+						))
+					}
+				</div>
+			</Fragment>
+		</Tabs>
+	</div>
+</section>

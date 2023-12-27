@@ -1,0 +1,29 @@
+---
+import skills_img from "../assets/images/skills.png";
+import Progressbar from "../components/Progressbar";
+---
+
+<section id="preview" class="py-20">
+	<div class="max-w-[1140px] m-auto px-4 md:flex items-center gap-10">
+		<div class="md:w-1/2 mb-10 md:mb-0 " data-aos="fade-left">
+			<img src={skills_img.src} alt="why us" />
+		</div>
+		<div class="md:w-1/2 " data-aos="fade-right">
+			<h2
+				data-aos="fade-in"
+				class="text-navy text-4xl mb-5 font-extrabold tracking-wide font-poppins"
+			>
+				Voluptatem dignissimos provident quasi corporis voluptates
+			</h2>
+			<p class="text-darkish mb-5">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Duis aute irure
+				dolor in reprehenderit
+			</p>
+			<Progressbar language="HTML" parcent="100%" />
+			<Progressbar language="CSS" parcent="90%" />
+			<Progressbar language="JAVASCRIPT" parcent="75%" />
+			<Progressbar language="PHOTOSHOP" parcent="55%" />
+		</div>
+	</div>
+</section>
