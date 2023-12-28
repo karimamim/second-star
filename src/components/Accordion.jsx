@@ -1,17 +1,20 @@
-import up_arrow from "../assets/images/angle-up-solid-svgrepo-com.svg";
-import down_arrow from "../assets/images/down-arrow-backup-2-svgrepo-com.svg";
+import up_arrow from "../assets/images/angle-up-svgrepo-com.svg";
+import down_arrow from "../assets/images/angle-down-svgrepo-com.svg";
 import { useState } from "react";
 
 function Accordion({ text, hiddenText }) {
 	const [isActive, setActive] = useState(false);
+
 	const handleClick = () => {
 		setActive(!isActive);
 	};
+
+	const dynamicClassName = isActive ? "text-blue" : "text-dark";
 	return (
-		<div>
+		<div className="w-full">
 			<button
 				onClick={handleClick}
-				className="text-dark flex gap-2 items-center justify-between font-semibold hover:text-skyBlue active:text-skyBlue  mb-2"
+				className={`w-[-webkit-fill-available] flex gap-2 justify-between  font-semibold hover:text-skyBlue active:text-skyBlue  mb-2 ${dynamicClassName}`}
 			>
 				{text}
 				{isActive ? (
@@ -22,7 +25,7 @@ function Accordion({ text, hiddenText }) {
 			</button>
 
 			{isActive && (
-				<p className="text-darkish transition duration-400 ease-in-out">
+				<p className="text-darkish transition-all duration-400 ease-in-out">
 					{hiddenText}
 				</p>
 			)}

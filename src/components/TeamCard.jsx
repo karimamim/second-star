@@ -19,7 +19,7 @@ function TeamCard({ src, name, role, text }) {
 					<div className="flex gap-3">
 						<a href="#">
 							<svg
-								className="bg-blueWhite p-2 rounded-3xl hover:bg-blue hover:fill-white transition duration-300"
+								className="bg-offWhite p-2 rounded-3xl hover:bg-blue hover:fill-white transition duration-300"
 								fill="#37517E"
 								height="35px"
 								width="35px"
@@ -50,7 +50,7 @@ function TeamCard({ src, name, role, text }) {
 						</a>
 						<a href="#">
 							<svg
-								className="bg-blueWhite p-2 rounded-3xl hover:bg-blue hover:fill-white transition duration-300"
+								className="bg-offWhite p-2 rounded-3xl hover:bg-blue hover:fill-white transition duration-300"
 								fill="#37517E"
 								height="35px"
 								width="35px"
@@ -81,7 +81,7 @@ function TeamCard({ src, name, role, text }) {
 						</a>
 						<a href="#">
 							<svg
-								className="bg-blueWhite p-2 rounded-3xl hover:bg-blue hover:fill-white transition duration-300"
+								className="bg-offWhite p-2 rounded-3xl hover:bg-blue hover:fill-white transition duration-300"
 								fill="#37517E"
 								height="35px"
 								width="35px"
@@ -102,9 +102,9 @@ function TeamCard({ src, name, role, text }) {
 								</g>
 							</svg>
 						</a>
-						<a href="#" className="bg-blueWhite rounded-3xl">
+						<a href="#" className="bg-offWhite rounded-3xl">
 							<svg
-								className="bg-blueWhite p-2 rounded-2xl hover:bg-blue hover:fill-white transition duration-300"
+								className="bg-offWhite p-2 rounded-2xl hover:bg-blue hover:fill-white transition duration-300"
 								fill="#37517E"
 								height="35px"
 								width="35px"

@@ -15,8 +15,10 @@ import PricingCard from "../components/PricingCard";
 			quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
 			sit in iste officiis commodi quidem hic quas.
 		</p>
-		<div>
-			<PricingCard />
+		<div class="md:flex justify-between gap-3">
+			<PricingCard price={0} plan="Free" />
+			<PricingCard price={29} plan="Business" />
+			<PricingCard price={49} plan="Developer" />
 		</div>
 	</div>
 </section>
