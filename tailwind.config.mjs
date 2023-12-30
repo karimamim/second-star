@@ -13,7 +13,7 @@ export default {
 			darkGray: "#5e5e5e",
 			darkish: "#777777",
 			dark: "rgb(68, 68, 68)",
-
+			ctaBg: "#030810e6",
 			white: "#ffffff",
 			offWhite: "#f3f5fa",
 			blueWhite: "#cbd6e9",
