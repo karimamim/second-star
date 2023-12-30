@@ -1,14 +1,14 @@
 function TeamCard({ src, name, role, text }) {
 	return (
 		<div className="hover:-mt-2 hover:mb-2  bg-white px-6 py-8 rounded w-full mb-5 md:mb-0 lg:w-[48%] items-center transition-all duration-300 ease-in-out">
-			<div data-aos="zoom-in" className="md:flex gap-10">
+			<div data-aos="zoom-in" className="md:flex items-center gap-10">
 				<img
-					className="mb-4 md:mb-0 w-20 md:w-40 rounded-[150px]"
+					className="mb-4 md:mb-0 w-20 md:w-40 rounded-full"
 					src={src}
 					alt="team member"
 				/>
 				<div>
-					<h3 className="text-2xl md:text-3xl text-navy font-jost font-bold mb-2">
+					<h3 className="text-2xl text-navy font-jost font-bold mb-2">
 						{name}
 					</h3>
 					<p className="text-sm text-dark font-poppins mb-1 md:text-base">

@@ -5,6 +5,7 @@ export default {
 		extend: {},
 		colors: {
 			navy: "#37517E",
+			lightNavy: "#6182ba",
 			darkNavy: "rgba(40, 58, 90, 0.9)",
 			blue: "#47B2E4",
 			skyBlue: "#209dd8",
@@ -12,14 +13,18 @@ export default {
 			darkGray: "#5e5e5e",
 			darkish: "#777777",
 			dark: "rgb(68, 68, 68)",
+
 			white: "#ffffff",
 			offWhite: "#f3f5fa",
 			blueWhite: "#cbd6e9",
+			mashWhite: "#dee2e6",
+			lightBlueWhite: "#e7f5fb",
 			transparent: "transparent",
 		},
 		fontFamily: {
 			jost: "'Jost', sans-serif",
 			poppins: "'Poppins', sans-serif",
+			openSans: "'Open Sans', sans-serif",
 		},
 		keyframes: {
 			goProgress: {

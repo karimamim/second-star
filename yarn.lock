@@ -437,6 +437,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/jost/-/jost-5.0.16.tgz#0776da940c079ef077dfaa5843d337e243eb32d9"
   integrity sha512-3eyBs4pMxRnrLhTPrhSgeeRP3B9XC1b8NXhI7VPzUuvDoqviqdUl7nOpih0dwDGkS+hUCVD35LWMNp0uSyNHDQ==
 
+"@fontsource/open-sans@^5.0.20":
+  version "5.0.20"
+  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-5.0.20.tgz#28008fd7f63074707bf4b08929c81dd534a5f53a"
+  integrity sha512-Tgdqmp9QX8YZd5TO+rEv5n5cZkTaDf0I0eHUHMe3xKxUgGR/9uKS7VYL+kiVZfMNZ/8EyMLwzcNFWVsNG6nZAg==
+
 "@fontsource/poppins@^5.0.8":
   version "5.0.8"
   resolved "https://registry.yarnpkg.com/@fontsource/poppins/-/poppins-5.0.8.tgz#a1c5540aedb3719a36eba5c7c5dfaa3aed3c9f80"

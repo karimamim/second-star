@@ -6,8 +6,8 @@ function PricingCard({ price, plan }) {
 		plan === "Business" ? "border-t-[4px] border-blue" : "";
 	return (
 		<div
-			data-aos="zoom-in"
-			className={`mb-10 md:mb-0 shadow-xl px-8 py-14 rounded-xl ${dynamicClassName}`}
+			data-aos="fade-up"
+			className={`mb-10 md:mb-0 shadow-xl hover:border-t-[4px] hover:border-blue transition-all duration-300 px-8 py-14 rounded-xl ${dynamicClassName}`}
 		>
 			<h3 className="text-navy font-bold text-xl font-jost mb-5">
 				{plan} Plane

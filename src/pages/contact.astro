@@ -1,1 +1,74 @@
-<h1>this is contact page</h1>
+---
+import { MapPin, Mail, Smartphone } from "lucide-react";
+import Map from "../components/map.html";
+import ContactForm from "../sections/contactForm.astro";
+
+const contactInfo = [
+	{
+		icon: MapPin,
+		heading: "Location:",
+		text: "A108 Adam Street, New York, NY 535022",
+	},
+	{
+		icon: Mail,
+		heading: "Email:",
+		text: "info@example.com",
+	},
+	{
+		icon: Smartphone,
+		heading: "Call:",
+		text: "+1 5589 55488 55s",
+	},
+];
+---
+
+<section class="py-20">
+	<div class="max-w-[1140px] m-auto px-4">
+		<h2
+			data-aos="fade-up"
+			class="text-navy font-extrabold text-center text-3xl font-jost uppercase mb-10"
+		>
+			contact
+		</h2>
+		<p class="text-dark text-center mb-10" data-aos="fade-up">
+			Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+			aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+			quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+			sit in iste officiis commodi quidem hic quas.
+		</p>
+		<div class="md:flex gap-10 justify-between">
+			<div
+				data-aos="fade-right"
+				class="md:w-1/3 border-y-[3px] border-blue px-8 shadow-md py-10 mb-5 md:mb-0"
+			>
+				{
+					contactInfo.map((info) => {
+						return (
+							<div class="flex items-center gap-4 mb-8">
+								<div class="text-blue p-3 rounded-full bg-lightBlueWhite hover:text-white hover:bg-blue transition duration-300">
+									<info.icon />
+								</div>
+								{/* <img src={location.src} alt="contact way" /> */}
+								<div>
+									<h3 class="text-navy text-2xl tracking-wide font-jost font-bold">
+										{info.heading}
+									</h3>
+									<p class="text-lightNavy text-sm font-jost font-thin">
+										{info.text}
+									</p>
+								</div>
+							</div>
+						);
+					})
+				}
+				<Map />
+			</div>
+			<div
+				data-aos="fade-left"
+				class="flex justify-center md:w-2/3 border-y-[3px] border-blue shadow-md px-8 py-10"
+			>
+				<ContactForm />
+			</div>
+		</div>
+	</div>
+</section>

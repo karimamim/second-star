@@ -31,6 +31,7 @@ const webPortfolioImages = [portfolio_img_2, portfolio_img_5, portfolio_img_9];
 <section id="portfolio" class="py-20">
 	<div class="max-w-[1140px] m-auto px-4">
 		<h2
+			data-aos="fade-up"
 			class="text-navy font-extrabold text-center text-3xl font-jost uppercase mb-10"
 		>
 			portfolio
@@ -41,7 +42,7 @@ const webPortfolioImages = [portfolio_img_2, portfolio_img_5, portfolio_img_9];
 			quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
 			sit in iste officiis commodi quidem hic quas.
 		</p>
-		<Tabs>
+		<Tabs data-aos="zoom-in">
 			<Fragment slot="tab-1">All</Fragment>
 			<Fragment slot="tab-2">App</Fragment>
 			<Fragment slot="tab-3">Card</Fragment>
@@ -52,7 +53,6 @@ const webPortfolioImages = [portfolio_img_2, portfolio_img_5, portfolio_img_9];
 					{
 						allPortfolioImages.map((allPortfolioImage) => (
 							<img
-								data-aos="zoom-in"
 								class="w-[31.5%]"
 								src={allPortfolioImage.src}
 								alt="portfolio image"
